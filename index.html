@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms Challenge</title>
+    <style>
+      * {
+        margin: auto;
+        padding: 0;
+        text-align: center;
+      }
+      div {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thank you for joining us for a session at Code Labs Academy!</h1>
+    <form action="/index.html" method="POST">
+      <div>
+        <label for="session_date"> Session Date:</label>
+        <input type="date" id="session_date" name="session_date" required />
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+          <option value="">select</option>
+          <option value="subject">Subject</option>
+          <option value="subject">Subject</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="topics">
+          Please mention any topics you would like to ask further questions or
+          gather more information on.
+        </label>
+        <textarea id="topics" name="topics" rows="4" cols="50"></textarea>
+      </div>
+      <div>
+        Do you study at home?
+        <input
+          type="radio"
+          id="study_at_home"
+          name="study_at_home"
+          value="yes"
+          required
+        />
+        <label for="study_at_home">Yes</label>
+        <input
+          type="radio"
+          id="study_not_at_home"
+          name="study_at_home"
+          value="no"
+          required
+        />
+        <label for="study_at_home">No</label>
+      </div>
+      <div>
+        Why are you seeking more information on these topics? <br />
+        <input
+          type="checkbox"
+          id="more_in_depth"
+          name="why_more_info"
+          value="more_in_depth"
+        />
+        <label for="more_in_depth">
+          I am interested in a more in depth discussion.
+        </label>
+        <br />
+        <input
+          type="checkbox"
+          id="not_understood"
+          name="why_more_info"
+          value="not_understood"
+        />
+        <label for="not_understood">
+          I didn't understand it in the session. </label
+        ><br />
+        <input
+          type="checkbox"
+          id="phone_apps"
+          name="why_more_info"
+          value="phone_apps"
+        />
+        <label for="phone_apps"> Phone Apps. </label>
+      </div>
+      <div>
+        <label>
+          On a scale of 1 to 5*, please indicate how informative you felt the
+          session was.
+        </label>
+        <input
+          type="number"
+          id="informative"
+          name="informative"
+          min="1"
+          max="5"
+        />
+      </div>
+      <div>
+        <label>
+          On a scale of 1 to 5*, please indicate how engaging you felt the
+          session was.
+        </label>
+        <input type="number" id="engaging" name="engaging" min="1" max="5" />
+      </div>
+      <div>
+        <label>
+          On a scale of 1 to 5*, please indicate how likely you feel it is that
+          you would recommend the course to a friend.
+        </label>
+        <input type="number" id="recommend" name="recommend" min="1" max="5" />
+      </div>
+      <div>
+        <label for="other_feedback">
+          Please use this space to give us any other feedback you may have.
+        </label>
+        <br />
+        <textarea
+          id="other_feedback"
+          name="other_feedback"
+          rows="4"
+          cols="50"
+        ></textarea>
+      </div>
+      <div>
+        <label> Email address: </label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <input type="submit" id="submit" name="submit" value="Submit form" />
+      </div>
+    </form>
+  </body>
+</html>
