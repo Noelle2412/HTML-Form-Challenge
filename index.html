@@ -19,13 +19,13 @@
     <h1>Thank you for joining us for a session at Code Labs Academy!</h1>
     <form action="/index.html" method="POST">
       <div>
-        <label for="session_date"> Session Date:</label>
+        <label for="session_date">Session Date:</label>
         <input type="date" id="session_date" name="session_date" required />
         <label for="subject">Subject</label>
         <select id="subject" name="subject" required>
           <option value="">select</option>
-          <option value="subject">Subject</option>
-          <option value="subject">Subject</option>
+          <option value="web_dev">Web Development</option>
+          <option value="data_science">Data Science</option>
           <option value="other">Other</option>
         </select>
       </div>
@@ -33,7 +33,8 @@
         <label for="topics">
           Please mention any topics you would like to ask further questions or
           gather more information on.
-        </label><br/>
+        </label>
+        <br />
         <textarea id="topics" name="topics" rows="4" cols="50"></textarea>
       </div>
       <div>
@@ -43,26 +44,24 @@
           id="study_at_home"
           name="study_at_home"
           value="yes"
-          required
-        />
+          required />
         <label for="study_at_home">Yes</label>
         <input
           type="radio"
           id="study_not_at_home"
           name="study_at_home"
           value="no"
-          required
-        />
+          required />
         <label for="study_at_home">No</label>
       </div>
       <div>
-        Why are you seeking more information on these topics? <br />
+        Why are you seeking more information on these topics?
+        <br />
         <input
           type="checkbox"
           id="more_in_depth"
           name="why_more_info"
-          value="more_in_depth"
-        />
+          value="more_in_depth" />
         <label for="more_in_depth">
           I am interested in a more in depth discussion.
         </label>
@@ -71,18 +70,17 @@
           type="checkbox"
           id="not_understood"
           name="why_more_info"
-          value="not_understood"
-        />
+          value="not_understood" />
         <label for="not_understood">
-          I didn't understand it in the session. </label
-        ><br />
+          I didn't understand it in the session.
+        </label>
+        <br />
         <input
           type="checkbox"
           id="phone_apps"
           name="why_more_info"
-          value="phone_apps"
-        />
-        <label for="phone_apps"> Phone Apps. </label>
+          value="phone_apps" />
+        <label for="phone_apps">Phone Apps.</label>
       </div>
       <div>
         <label>
@@ -94,8 +92,7 @@
           id="informative"
           name="informative"
           min="1"
-          max="5"
-        />
+          max="5" />
       </div>
       <div>
         <label>
@@ -120,11 +117,10 @@
           id="other_feedback"
           name="other_feedback"
           rows="4"
-          cols="50"
-        ></textarea>
+          cols="50"></textarea>
       </div>
       <div>
-        <label> Email address: </label>
+        <label>Email address:</label>
         <input type="email" id="email" name="email" />
       </div>
       <div>
